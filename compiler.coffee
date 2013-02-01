@@ -195,7 +195,7 @@ class CasCompiler
     # These are some helper methods to trim empty strings,
     # or strings containing only whitespace.
     Array.prototype.popEmpty   = -> @pop() while @length > 0 and not @[@length - 1].replace /\s/, ""
-    Array.prototype.shiftEmpty = -> @shift() while @legnth > 0 and not @[0].replace /\s/, ""
+    Array.prototype.shiftEmpty = -> @shift() while @length > 0 and not @[0].replace /\s/, ""
 
     # As when using the String.trim method, whitespace-only items,
     # or empty strings, will only be removed from the "edges" of the Array,
