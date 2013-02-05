@@ -46,10 +46,8 @@ class CasDeclaration
   # @param CasSelector selector
   # @param Object properties - keys are property names, values are property values.
   constructor: (selector, properties)->
-    properties  = {} if not properties
-
     @selector   = selector
-    @properties = properties
+    @properties = properties or {}
 
   # Add a property to @properties.
   # Has two syntaxes:
