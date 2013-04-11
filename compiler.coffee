@@ -284,7 +284,7 @@ class CasCompiler
     # Since html.match returns an Array,
     # we will have to use an Array to hold the fallback as well,
     # and then exract the first item from whichever Array is used.
-    doctype = (html.match /<\!doctype(.*?)>/i or ["<!doctype html>"])[0]
+    doctype = (html.match(/<\!doctype(.*?)>/i) or ["<!doctype html>"])[0]
 
     # We create a brand new JavaScript document object,
     # and will fill it with the to-be-compiled html.
